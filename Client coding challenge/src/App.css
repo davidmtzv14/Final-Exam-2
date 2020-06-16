@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+.movie {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+@media (max-width: 660px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+  .movies {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 990px) {
+  .app {
+    display: flex;
+    flex-direction: row;
+  }
+  .movies {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 990px) {
+  .app {
+    display: flex;
+    flex-direction: row;
+  }
+  .movies {
+    display: flex;
+    flex-direction: row;
+  }
+}
